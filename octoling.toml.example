@@ -1,0 +1,19 @@
+[[github]]
+owner = "Thog"
+repository = "octoling_test_repo"
+api_token = "<<api_token>>"
+webhook_secret = "<<webhook_secret>>"
+enabled = true
+
+[[provider]]
+name = "LXC local"
+id = "e695d41d-2285-4a3a-a9c5-4907b6979f55"
+type = "lxc"
+enabled = true
+
+[[image]]
+name = "download:ubuntu:focal:amd64"
+id = "772b735d-5f0e-4291-9a9b-018d5765876d"
+provider_id = "e695d41d-2285-4a3a-a9c5-4907b6979f55"
+labels = ["octoling-ubuntu-latest"]
+enabled = true
